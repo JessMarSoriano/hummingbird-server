@@ -33,6 +33,8 @@
 #  fk_rails_6fac2de613  (target_user_id => users.id)
 #
 
+require_dependency 'html/pipeline/onebox_filter'
+
 class Post < ApplicationRecord
   has_paper_trail
   include WithActivity
