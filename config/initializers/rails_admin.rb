@@ -19,7 +19,9 @@ RailsAdmin.config do |config|
     .freeze
 
   config.actions do
-    dashboard                     # mandatory
+    dashboard do                  # mandatory
+      statistics false
+    end
     index                         # mandatory
     history_index do
       only PAPER_TRAIL_AUDIT_MODEL
